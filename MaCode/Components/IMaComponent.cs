@@ -61,14 +61,6 @@ namespace MaCode.Components
                 await zipFile.CopyToAsync(fileStream);
             }
 
-
-            //bool addedInfo = UpdateViewBindings(componentInfo);
-
-            //if(!addedInfo)
-            //{
-            //    return false;
-            //}
-
             using (ZipArchive archive = ZipFile.OpenRead(zipPath))
             {
                 foreach (ZipArchiveEntry entry in archive.Entries)
@@ -76,18 +68,7 @@ namespace MaCode.Components
                     string destinationPath = Path.GetFullPath(Path.Combine(extractPath, entry.FullName));
                     entry.ExtractToFile(destinationPath, true);
 
-                    //if (entry.FullName.EndsWith(".json", StringComparison.OrdinalIgnoreCase))
-                    //{
-                    //    // json Settings, merge it with viewBindings.json
-
-                    //    // Gets the full path to ensure that relative segments are removed.
-                    //    string destinationPath = Path.GetFullPath(Path.Combine(extractPath, entry.FullName));
-
-                    //    // Ordinal match is safest, case-sensitive volumes can be mounted within volumes that
-                    //    // are case-insensitive.
-                    //    if (destinationPath.StartsWith(extractPath, StringComparison.Ordinal))
-                    //        entry.ExtractToFile(destinationPath);
-                    //}
+                   
                 }
             }
             var compModel = GetComponentSettingsFromFile(extractPath + "\\settings.json");
