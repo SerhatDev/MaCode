@@ -1,6 +1,6 @@
 ## **What is MaCode ?**
 
-MaCode includes tools to help developers for every projects routines. More tools are added with time.
+MaCode includes tools to help developers for every projects routines for .Net Core Razor Pages. More tools are added with time.
 
 ### **SweetAlerts2**
 
