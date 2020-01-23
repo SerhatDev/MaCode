@@ -22,11 +22,11 @@ Wrapper for [SweetAlerts2](https://sweetalert2.github.io/) javascript library.
   ```csharp
   @Swal.Success("Done!", "Good")
   ```
-  Use 'Success' method to create a error alert.
+  Use 'Error' method to create a error alert.
   ```csharp
-  @Swal.Error("Done!", "Good")
+  @Swal.Error("Oops!", "That didn't work!")
   ```
-  Use 'Dialog' method to create a error alert.
+  Use 'Dialog' method to create a dialog.
   ```csharp
   @Swal.Dialog("Title", "Are you sure ?")
   ```
