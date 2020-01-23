@@ -75,6 +75,7 @@ Wrapper for [SweetAlerts2](https://sweetalert2.github.io/) javascript library.
         ,cancelButtonText:"Nope!"
         ,successCallback:"Done()"
         ,cancelCallback:"Cancel()")
+        
    // Show alert with condition
    @Swal.Success("Title","Message",when:Model.hasMessage)
   ```
